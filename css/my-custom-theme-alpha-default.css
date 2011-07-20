@@ -1,6 +1,7 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
-#page {
-  width: 960px !important;
+
+div#page {
+  width: 960px;
   padding: 0 10px;
   margin: 0 auto;
 }

@@ -1,0 +1,7 @@
+/* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+div#page {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
