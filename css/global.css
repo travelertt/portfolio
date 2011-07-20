@@ -6,8 +6,11 @@ body {
   font-family: Maven Pro, Verdana, Geneva, Arial, Helvetica, sans-serif;
   background: url(../webtreats_twilight-2.png) fixed repeat;
 }
-#page {
-  background: #ffffff;
+div#page {
+  
+  padding: 0 10px;
+  margin: 0 auto;
+  background:#ffffff;
   background: rgba(255,255,255,0.90);
   box-shadow: 0px 0px 2px #000 inset;
   -webkit-box-shadow: 0px 0px 2px #000 inset;
