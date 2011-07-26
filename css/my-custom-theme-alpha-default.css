@@ -19,3 +19,6 @@ div#page {
   background: rgba(255,255,255,0.94);
   box-shadow: 0 0 3px #000;
 }
+#block-search-form {
+  text-align: right;
+}
