@@ -7,6 +7,9 @@
  * BRN    Medium  Dark    Bright  Light
  * BC7432 6F563F  502804  F3BD8A  F3DBC5
  * */
+a {
+  transition: all 0.3 linear;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: Allan, Impact, sans-serif;
 }
@@ -16,4 +19,14 @@ body {
 }
 div#page {
 
+}
+.gr_grid_book_container {
+  width: 93px !important;
+  height: 151px;
+
+}
+div.gr_grid_book_container:hover {
+  -moz-transform: scale(1.3);
+  box-shadow: 0 0 8px black;
+  background: gray;
 }
