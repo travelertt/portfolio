@@ -7,8 +7,3 @@
  * BRN    Medium  Dark    Bright  Light
  * BC7432 6F563F  502804  F3BD8A  F3DBC5
  * */
-div#page {
-  width: inherit;
-  padding: 0 10px;
-  background: #fff;
-}
