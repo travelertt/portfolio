@@ -8,17 +8,18 @@
  * BC7432 6F563F  502804  F3BD8A  F3DBC5
  * */
 body {
-  background: url(../webtreatsetc-blue1.jpg) fixed repeat;
-}
-div#page {
-  width: inherit;
-  min-height:700px;
-  padding: 0 10px;
-  margin: 0 auto;
-  background:#ffffff;
-  background: rgba(255,255,255,0.94);
-  box-shadow: 0 0 3px #000;
+  background: url(../webtreats_twilight-3.png) fixed repeat;
 }
 #block-search-form {
   text-align: right;
+}
+section#section-content .container-12 {
+  background: rgba(255,255,255,0.88);
+  box-shadow: 0 0 5px #333
+}
+header#section-header{
+  background: url(../random_grey_variations.png);
+}
+footer#section-footer {
+  background: #808080;
 }
