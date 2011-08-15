@@ -27,3 +27,15 @@ div.gr_grid_book_container:hover {
   box-shadow: 0 0 8px black;
   background: gray;
 }
+#search-block-form input.form-submit, #search-form input.form-submit {
+  height: 23px;
+  width: 32px;
+  background-repeat:no-repeat;
+  background-position: top center;
+  background-attachment:scroll;
+  background-clip: border-box;
+  background-image: url(../images/search-button.png);
+  overflow: hidden;
+  border:#808080 1px solid;
+  text-indent: 9999px;
+}
