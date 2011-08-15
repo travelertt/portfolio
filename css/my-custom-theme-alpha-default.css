@@ -8,7 +8,7 @@
  * BC7432 6F563F  502804  F3BD8A  F3DBC5
  * */
 body {
-  background: url(../webtreats_twilight-3.png) fixed repeat;
+  background: url(../images/webtreats_twilight-3.png) fixed repeat;
 }
 #block-search-form {
   text-align: right;
@@ -18,7 +18,7 @@ section#section-content .container-12 {
   box-shadow: 0 0 5px #333
 }
 header#section-header{
-  background: url(../random_grey_variations.png);
+  background: url(../images/random_grey_variations.png);
 }
 footer#section-footer {
   background: #808080;
