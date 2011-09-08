@@ -24,3 +24,39 @@ function my_custom_theme_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
   }
 } 
+
+/**
+ * Alter the appearance of the taxonomy terms.
+ * First set up a field to have a custom preprocess, then define the preprocess callback
+ */
+function my_custom_theme_preprocess_field(&$vars,$hook) {
+  // Add specific sggestions that can override the default implementation.
+  //array_unshift($vars['theme_hook_suggestions'], 'field__' . $vars['element']['#field_type']);
+}
+
+/*
+  function my_custom_theme_field__field_tags($vars) {
+  $output = '';
+  $glue = variable_get('my_custom_theme_tag_glue', ' + ');
+  
+  //Render the label, if it's not hidden.
+  if (!$vars['label_hidden']) {
+    $output .= '<h2>' . $vars['label'] . '</h2>';
+  }
+  
+  // Render the items.
+  $output .= '<ul>';
+  for ($i = 0, $l = count($vars['items']); $i < $l; $i++) {
+    $output .= '<li>' . drupal_render($vars['items'][$i]);
+    
+    // Put glue between all the tags
+    if($l - 1 > $i) {
+      $output .= $glue;
+    }
+    $output .= '</li>';
+  }
+  $output .= '</ul>';
+  
+  return $output;
+}
+ */
