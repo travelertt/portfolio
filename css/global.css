@@ -9,16 +9,48 @@
  * */
 a {
   transition: all 0.3 linear;
+  color: #666666;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: Allan, Impact, sans-serif;
+  font-family: "Josefin Sans", "Arial Narrow", sans-serif;
+  font-weight:200;
+  color: rgba(50, 50, 50, 0.8);
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+
+}
+.site-name a{
+  font-size: 42px;
+  color:  rgba(50, 50, 50, 1);
+}
+.block h2 a {
+  color:  rgba(50, 50, 50, 1);
+}
+.content a {
+  color: #6F563F;
+}
+.site-slogan {
+  font-size: 18px;
+  color: #333;
+}
+hgroup.site-name-slogan {
+  padding: 20px 0 0 0;
+}
+img#logo {
+  height: 125px;
+  width: 125px;
+}
+nav.navigation a{
+  font-family: "Josefin Sans", "Arial Narrow", sans-serif;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #333333;
 }
 body {
   font-family: Maven Pro, Verdana, Geneva, Arial, Helvetica, sans-serif;
-  
 }
 .gr_grid_book_container {
-  width: 93px !important;
+  /*width: 93px !important;*/
   height: 151px;
 
 }
