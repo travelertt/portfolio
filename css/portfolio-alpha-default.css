@@ -1,1 +1,198 @@
-/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* This file will hold styles that are loaded using the same media query as the narrow grid.
+ * 
+ * -- Color Scheme --
+ * Teal   M Teal  D Teal  Bright  Light
+ * 206973 274044  022B31  85DBE7  BCE1E7
+ * 
+ * BRN    Medium  Dark    Bright  Light
+ * BC7432 6F563F  502804  F3BD8A  F3DBC5
+ * */
+body {
+  background: url(../images/handmadepaper.png) scroll repeat;
+}
+#page {
+  background-color:#f0f8ff; 
+  background-image: -moz-radial-gradient(center 200px, circle, #FCFCFC 0%,rgba(235,235,255,0) 600px),-moz-linear-gradient(0% 400px 90deg,rgba(168,235,255,0.0), rgba(168,235,255,0.5)), url(../images/handmadepaper.png); 
+  background-image: -webkit-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
+  background-image: -o-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
+  background-image: -ms-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
+  background-image: radial-gradient(50% top, circle cover, rgba(229,236,255,0.2) 22%,rgba(229,255,248,0.1) 66%,rgba(168,235,255,0.5) 100%);
+}
+#region-menu {
+/*  height: 130px;*/
+}
+.views-nivo-slider {
+  max-width: 100%;
+ width: inherit;
+}
+nav.navigation {
+  margin: 23px 0 0 0;
+  padding: 10px 0;
+  text-align: right;
+  vertical-align:middle;
+  font-size: 1.3em;
+}
+.navigation ul.inline li {
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.navigation ul.inline li:hover {
+  border-bottom: 1px solid #F0F8FF;
+}
+#zone-user {
+  background: #333;
+  height: 4px;
+  margin-bottom: 30px;
+  width: 940px;
+}
+#region-branding{
+    margin-top: 10px;
+}
+#zone-branding {
+  margin-bottom: 30px;
+}
+#zone-menu-wrapper {
+  background-color:#474747; 
+  background:  url(../images/100-100-3-monochrome.png),  linear-gradient(bottom, #474747 0%, #333333 100%);
+  background:  url(../images/200-100-5-monochrome.png), -o-linear-gradient(bottom, #474747 0%, #333333 100%);
+  background:  url(../images/100-100-3-monochrome.png), -moz-linear-gradient(bottom, #474747 0%, #333333 100%);
+  background: -webkit-linear-gradient(bottom, #474747 0%, #333333 100%),  url(../images/200-100-5-monochrome.png);
+  background: -ms-linear-gradient(bottom, #474747 0%, #333333 100%),  url(../images/200-100-5-monochrome.png);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #474747),
+    color-stop(1, #333333)
+  ),  url(../images/200-100-5-monochrome.png);
+  border-bottom: 3px solid #0069ff;
+  padding: 5px 0 25px 0;
+}
+#block-search-form {
+  text-align: right;
+}
+#zone-content-wrapper {
+  padding: 20px 0 40px;
+}
+#zone-content .content article:first-of-type {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+#zone-content .content article .node-header-image {
+  background: rgba(25, 25, 25, 1);
+  border: 0px transparent;
+  border-radius: 13px 13px 0 0;
+  box-shadow: 0 1px 2px #CCC;
+}
+#zone-content .content article .field-type-image {
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  padding: 10px 10px 0 10px;
+  border: 0px transparent;
+  border-radius: 13px 13px 0 0;
+}
+#zone-content .content article .field-type-image img {
+  border-radius: 13px 13px 0 0;
+}
+#zone-content .content .node-title {
+  padding: 15px 15px;
+  margin-bottom: 0;
+}
+#zone-content .content article .node-title a {
+  color: #000;
+  text-shadow: 0px -1px 0px #999;
+  text-decoration: none;
+}
+#zone-content .content article h2.node-title a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#zone-content .content article .content {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+#zone-content .content article .content .field-name-field-tags .field-items .field-item {
+  float: left;
+  list-style: none;
+  border-radius: 15px;
+  background: #BCE1E7;
+}
+#zone-content .content article .content .field-name-field-tags .field-items .field-item a {
+  padding: 3px 7px 3px 3px;
+  display: block;
+}
+#zone-content .content article footer {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+#zone-content .content article nav.links {
+  padding: 0 15px;
+  margin-bottom: 20px
+}
+#tt-welcome .pane-content{
+  margin-top: 1.6em;
+  font-size: 3.4em;
+  line-height: 1em;
+  color: #999;
+  text-shadow: -1px 0px 1px #333 ;
+}
+#tt-welcome .pane-content em {
+  color: #6699cc;
+  font-style: normal;
+  font-weight: bold;
+}
+#tt-welcome .tt-intro-large {
+  font-size: 1.2em;
+  line-height: 0.9em;
+}
+#tt-welcome .tt-intro-small {
+  font-size: 0.7em;
+  color: #333333;
+}
+.tt-mail-me {
+  position: relative;
+  right: 1.65em;
+}
+#zone-postscript-wrapper {
+  border-top: 3px solid #666;
+  padding: 25px 0 25px;
+  background-image: url(../images/carbon_fibre_v2.png);
+  color: #F0F8FF;
+}
+#zone-postscript-wrapper .tt-projects .views-row {
+  padding: 13px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  width: 45%;
+}
+#zone-postscript-wrapper .tt-projects .views-field-title {
+  font-size: 1em;
+  padding: 5px 0 5px 10px;
+}
+#zone-postscript-wrapper .tt-projects .views-field-field-image {
+  float: left;
+  margin-right: 20px;
+}
+#zone-postscript-wrapper .tt-projects .views-row-first {
+  left: -11px;
+}
+#zone-postscript-wrapper .tt-projects .views-row-last {
+  right: -11px;
+}
+#zone-footer-wrapper {
+  background: url(../images/dark-metal.jpg) fixed repeat;
+  background-color: #808080;
+  padding: 30px 0 50px;
+  border-top: 3px solid #808080;
+  color: #F0F8FF;
+}
+#zone-footer-wrapper .block-title {
+  font-size: 2em;
+  line-height: 1.8em;
+  border-bottom:1px solid #F0F8FF;
+  margin-bottom: 20px;
+}
+#tt-welcome .pane-content p {
+  font-family: "Cabin", helvetica, "Arial", sans-serif;
+}
