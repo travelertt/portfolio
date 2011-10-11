@@ -1,1 +1,16 @@
-/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* This file will hold styles that are loaded using the same media query as the normal grid.
+ * 
+ * -- Color Scheme --
+ * Teal   M Teal  D Teal  Bright  Light
+ * 206973 274044  022B31  85DBE7  BCE1E7
+ * 
+ * BRN    Medium  Dark    Bright  Light
+ * BC7432 6F563F  502804  F3BD8A  F3DBC5
+ * */
+
+div#page {
+
+}
+#zone-postscript-wrapper .tt-projects .views-field-field-image {
+
+}

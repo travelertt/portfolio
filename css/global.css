@@ -7,27 +7,26 @@
  * BRN    Medium  Dark    Bright  Light
  * BC7432 6F563F  502804  F3BD8A  F3DBC5
  * */
-a {
-  transition: all 0.3 linear;
-  color: #666666;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Sans", "Arial Narrow", sans-serif;
-  font-weight:200;
-  color: rgba(50, 50, 50, 0.8);
-}
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-
-}
-.site-name a{
-  font-size: 42px;
-  color:  rgba(50, 50, 50, 1);
-}
-.block h2 a {
-  color:  rgba(50, 50, 50, 1);
+body {
+  font-family: "Maven Pro", Arial, "MS Trebuchet", sans-serif;
+  line-height: 1.5em;
 }
 .content a {
-  color: #6F563F;
+  transition: all 0.3 linear;
+  color: #6699CC;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cabin", helvetica, "Arial", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  color: rgba(50, 50, 50, 0.9);
+}
+.site-name a {
+  font-size: 2.1em;
+  color: rgba(50, 50, 50, 1);
+}
+.block h2 a {
+  color: rgba(50, 50, 50, 1);
 }
 .site-slogan {
   font-size: 18px;
@@ -36,23 +35,16 @@ h1, h2, h3, h4, h5, h6 {
 hgroup.site-name-slogan {
   padding: 20px 0 0 0;
 }
-img#logo {
-  height: 125px;
-  width: 125px;
-}
-nav.navigation a{
-  font-family: "Josefin Sans", "Arial Narrow", sans-serif;
-  font-size: 1.8em;
+#main-menu a {
+  font-family: "Cabin", "Arial", sans-serif;
+  font-size: 1em;
   text-decoration: none;
-  color: #333333;
-}
-body {
-  font-family: Maven Pro, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #DDD;
 }
 .gr_grid_book_container {
   /*width: 93px !important;*/
   height: 151px;
-
 }
 div.gr_grid_book_container:hover {
   -moz-transform: scale(1.3);
@@ -70,4 +62,253 @@ div.gr_grid_book_container:hover {
   overflow: hidden;
   border:#808080 1px solid;
   text-indent: 9999px;
+}
+#tt-welcome .pane-content p {
+  font-family: "Cabin", "Arial", sans-serif;
+}
+.tt-share a {
+  color:#F0F8FF;
+  font-size: 0.8em;
+  padding:12px 10px 12px 50px;
+  background-position: 7px center;
+  background-repeat: no-repeat;
+  line-height: 3em;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out;
+}
+.tt-share a:hover {
+  color:#6699CC;
+  background: rgba(0,0,0, 0.25);
+  background-position: 7px center;
+  background-repeat: no-repeat;
+}
+#tt-share-forrst {
+  background-image: url(../images/32-x-32px/forrst_dark.png);
+}
+#tt-share-forrst:hover {
+  background-image: url(../images/32-x-32px/forrst_active.png);
+}
+#tt-share-vimeo {
+  background-image: url(../images/32-x-32px/vimeo_dark.png);
+}
+#tt-share-vimeo:hover {
+  background-image: url(../images/32-x-32px/vimeo_active.png);
+}
+#tt-share-linkedin {
+  background-image: url(../images/32-x-32px/in_dark.png);
+}
+#tt-share-linkedin:hover {
+  background-image: url(../images/32-x-32px/in_active.png);
+}
+#tt-share-email {
+  background-image: url(../images/32-x-32px/vcard_dark.png);
+}
+#tt-share-email:hover {
+  background-image: url(../images/32-x-32px/vcard_active.png);
+}
+#tt-share-twitter {
+  background-image: url(../images/32-x-32px/twitter_dark.png);
+}
+#tt-share-twitter:hover {
+  background-image: url(../images/32-x-32px/twitter_active.png);
+}
+body {
+  background: url(../images/handmadepaper.png) scroll repeat;
+  background: yellow;
+}
+#page {
+  background-color:#f0f8ff; 
+  background-image: -moz-radial-gradient(center 200px, circle, #FCFCFC 0%,rgba(235,235,255,0) 600px),-moz-linear-gradient(0% 400px 90deg,rgba(168,235,255,0.0), rgba(168,235,255,0.5)), url(../images/handmadepaper.png); 
+  background-image: -webkit-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
+  background-image: -o-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
+  background-image: -ms-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
+  background-image: radial-gradient(50% top, circle cover, rgba(229,236,255,0.2) 22%,rgba(229,255,248,0.1) 66%,rgba(168,235,255,0.5) 100%);
+}
+#region-menu {
+/*  height: 130px;*/
+}
+.views-nivo-slider {
+  max-width: 100%;
+ width: inherit;
+}
+.navigation {
+  margin: 23px 0 0 0;
+  padding: 10px 0;
+  text-align: right;
+  vertical-align:middle;
+  font-size: 1.3em;
+}
+.navigation ul.inline li {
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.navigation ul.inline li:hover {
+  border-bottom: 1px solid #F0F8FF;
+}
+#zone-user {
+  background: #333;
+  height: 4px;
+  margin-bottom: 30px;
+  width: 940px;
+}
+#region-branding{
+    margin-top: 10px;
+}
+#zone-branding {
+  margin-bottom: 30px;
+}
+#zone-menu-wrapper {
+  background-color:#474747; 
+  background:  url(../images/100-100-3-monochrome.png),  linear-gradient(bottom, #474747 0%, #333333 100%);
+  background:  url(../images/200-100-5-monochrome.png), -o-linear-gradient(bottom, #474747 0%, #333333 100%);
+  background:  url(../images/100-100-3-monochrome.png), -moz-linear-gradient(bottom, #474747 0%, #333333 100%);
+  background: -webkit-linear-gradient(bottom, #474747 0%, #333333 100%),  url(../images/200-100-5-monochrome.png);
+  background: -ms-linear-gradient(bottom, #474747 0%, #333333 100%),  url(../images/200-100-5-monochrome.png);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #474747),
+    color-stop(1, #333333)
+  ),  url(../images/200-100-5-monochrome.png);
+  border-bottom: 3px solid #0069ff;
+  padding: 5px 0 25px 0;
+}
+#block-search-form {
+  text-align: right;
+}
+#zone-content-wrapper {
+  padding: 20px 0 40px;
+}
+#zone-content .content article:first-of-type {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+#zone-content .content .node-title {
+  padding: 15px 15px;
+}
+#zone-content .content article .node-title a {
+  text-shadow: 0px -1px 0px #999;
+  text-decoration: none;
+}
+#zone-content #page-title {
+  margin: 20px 0 30px;
+  text-shadow: 0px -1px 0px #999;
+  font-size: 4.5em;
+  letter-spacing: 0.03em;
+  line-height: 1em;
+}
+#zone-content .content article h2.node-title a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#zone-content .content article .content {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+#zone-content .content article .content .field-name-field-tags .field-items .field-item {
+  float: left;
+  list-style: none;
+  border-radius: 15px;
+  background: #BCE1E7;
+}
+#zone-content .content article .content .field-name-field-tags .field-items .field-item a {
+  padding: 3px 7px 3px 3px;
+  display: block;
+}
+#zone-content .content article footer {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+#zone-content .content article nav.links {
+  padding: 0 15px;
+  margin-bottom: 20px
+}
+#tt-welcome .pane-content{
+  margin-top: 0.6em;
+  font-size: 2.2em;
+  line-height: 1em;
+  color: #999;
+  text-shadow: -1px 0px 1px #333 ;
+}
+#tt-welcome .pane-content em {
+  color: #6699cc;
+  font-style: normal;
+  font-weight: bold;
+}
+#tt-welcome .tt-intro-large {
+  font-size: 1.2em;
+  line-height: 0.9em;
+}
+#tt-welcome .tt-intro-small {
+  font-size: 0.7em;
+  color: #333333;
+}
+.tt-sticker {
+  margin: 10px;
+  text-align: center;
+}
+.tt-mail-me {
+  margin: 10px 0 10px 22px;
+  text-align: center;
+}
+.tt-projects .views-field-field-image {
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #333;
+}
+.tt-projects .views-field-field-image img {
+  border: 2px solid #FCFCFC;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #333;
+}
+#zone-postscript-wrapper {
+  border-top: 3px solid #666;
+  background-image: url(../images/carbon_fibre_v2.png);
+  color: #F0F8FF;
+}
+#zone-postscript-wrapper .tt-projects .views-row {
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#zone-postscript-wrapper .tt-projects .views-field-title {
+  font-size: 2em;
+  padding: 18px 0 5px 10px;
+}
+#zone-postscript-wrapper .tt-projects .views-field-title a {
+  color:#DDDDDD;
+  text-decoration: none;
+}
+#zone-postscript-wrapper .tt-projects .views-field-field-image {
+  margin: 16px;
+}
+#zone-postscript-wrapper .tt-projects .views-field-body {
+  padding: 18px 15px 10px;
+}
+#zone-postscript-wrapper .tt-projects .views-row-first {
+  
+}
+#zone-postscript-wrapper .tt-projects .views-row-last {
+  
+}
+#zone-footer-wrapper {
+  background: url(../images/dark-metal.jpg) fixed repeat;
+  background-color: #808080;
+  border-top: 3px solid #808080;
+  color: #F0F8FF;
+}
+#zone-footer-wrapper .block-title {
+  font-size: 2em;
+  line-height: 1.8em;
+  border-bottom:1px solid #F0F8FF;
+  margin-bottom: 20px;
+  color: #F0F8FF;
+}
+#tt-welcome .pane-content p {
+  font-family: "Cabin", helvetica, "Arial", sans-serif;
 }

@@ -21,11 +21,3 @@ Twitter:        http://twitter.com/Omeglicon
 ##########################################################################################
 
 Any custom CSS files should be placed in this folder.
-
- * -- Color Scheme --
- * Teal   M Teal  D Teal  Bright  Light
- * 206973 274044  022B31  85DBE7  BCE1E7
- * 
- * BRN    Medium  Dark    Bright  Light
- * BC7432 6F563F  502804  F3BD8A  F3DBC5
- * 
