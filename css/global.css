@@ -90,6 +90,10 @@ div.gr_grid_book_container:hover {
 #tt-welcome {
   /*background: url(../images/now-accepting-work.png) no-repeat right 15px;*/
 }
+.tt-share ul {
+  list-style-image: none;
+  list-style-type: none;
+}
 .tt-share a {
   color:#F0F8FF;
   font-size: 0.8em;
