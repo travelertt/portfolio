@@ -27,6 +27,7 @@ h1 {
 }
 h2 {
   font-size: 1.5em;
+  letter-spacing: normal;
 }
 h3 {
   font-size: 0.8em;
@@ -325,7 +326,7 @@ body {
   
 }
 #zone-footer-wrapper {
-  background: url(../images/dark-metal.jpg) fixed repeat;
+  background: url(../images/dark-metal.jpg) scroll repeat;
   background-color: #808080;
   border-top: 3px solid #808080;
   color: #F0F8FF;
