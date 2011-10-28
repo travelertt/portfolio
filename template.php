@@ -10,7 +10,7 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
-function my_custom_theme_form_alter(&$form, &$form_state, $form_id) {
+function portfolio_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
     //$form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
@@ -29,7 +29,7 @@ function my_custom_theme_form_alter(&$form, &$form_state, $form_id) {
  * Alter the appearance of the taxonomy terms.
  * First set up a field to have a custom preprocess, then define the preprocess callback
  */
-function my_custom_theme_preprocess_field(&$vars,$hook) {
+function portfolio_preprocess_field(&$vars,$hook) {
   // Add specific sggestions that can override the default implementation.
   //array_unshift($vars['theme_hook_suggestions'], 'field__' . $vars['element']['#field_type']);
 }

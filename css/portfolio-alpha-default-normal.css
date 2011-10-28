@@ -14,3 +14,10 @@ div#page {
 #zone-postscript-wrapper .tt-projects .views-field-field-image {
 
 }
+#tt-welcome .pane-content{
+  margin-top: 15%;
+}
+.tt-mail-me {
+  position: relative;
+  left:1.65em;
+}
