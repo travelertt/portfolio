@@ -62,18 +62,31 @@ hgroup.site-name-slogan {
 }
 #block-system-main-menu {
   text-align: right;
-  
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 23px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px;
+  text-align: right;
+  vertical-align: middle;
+  float: right;
 }
 ul.menu li {
   display: inline;
   list-style-type: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 1em;
 }
 #block-system-main-menu a {
   font-family: "Cabin", "Arial", sans-serif;
-  font-size: 1em;
   text-decoration: none;
   font-weight: 100;
   color: #DDD;
+  font-size: 1.3em;
 }
 .gr_grid_book_container {
   /*width: 93px !important;*/
