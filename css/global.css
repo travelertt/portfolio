@@ -382,10 +382,14 @@ body {
 }
 .tt-projects .views-field-field-tags {
   margin-left: 1em;
+  margin-right: 1em;
+}
+.tt-projects .views-field-field-tags a{
   font-size: 0.75em;
   background: #999;
   padding: 4px 10px 4px 10px;
   border-radius: 7px;
+  color: #fff;
 }
 .tt-projects .views-field-field-url {
   margin-left: 1em;
