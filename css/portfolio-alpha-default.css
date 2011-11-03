@@ -52,6 +52,22 @@ nav.navigation {
 #zone-branding {
   margin-bottom: 30px;
 }
+/**
+ *   Main menu
+ */
+#block-system-main-menu {
+  text-align: right;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 23px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px;
+  text-align: right;
+  vertical-align: middle;
+}
 #zone-menu-wrapper {
   background-color:#474747; 
   background:  url(../images/100-100-3-monochrome.png),  linear-gradient(bottom, #474747 0%, #333333 100%);
@@ -112,30 +128,44 @@ nav.navigation {
   padding: 0 15px;
   margin-bottom: 20px
 }
-#tt-welcome .pane-content{
-  margin-top: 8%;
+/**
+ *   Front Page Intro
+ */
+#tt-welcome {
   font-size: 3.4em;
   line-height: 1em;
   color: #999;
   text-shadow: -1px 0px 1px #333 ;
+  font-family: "Cabin", "Arial", sans-serif;
 }
-#tt-welcome .pane-content em {
+#tt-welcome p {
+  z-index: 100;
+  margin-bottom: inherit;
+  line-height: inherit;
+  line-height: 1.2em;
+  text-align: justify;
+}
+#tt-welcome p strong {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+#tt-welcome em {
   color: #6699cc;
   font-style: normal;
   font-weight: bold;
+  font-size: 1.9em;
 }
 #tt-welcome .tt-intro-large {
-  font-size: 1.2em;
-  line-height: 0.9em;
+  font-size: 0.8em;
 }
-#tt-welcome .tt-intro-small {
-  font-size: 0.7em;
+#tt-welcome p.tt-intro-small {
+  font-size: 0.8em;
   color: #333333;
+  line-height: 1em;
+  font-weight: lighter;
 }
 .tt-mail-me {
-  position: relative;
-  right: -10px;
-  margin: 0;
+  right: -20px;
 }
 .tt-mail-me img{
   width: 100%;
@@ -163,9 +193,6 @@ nav.navigation {
 }
 #zone-footer-wrapper {
   padding: 30px 0 50px;
-}
-#tt-welcome .pane-content p {
-  font-family: "Cabin", helvetica, "Arial", sans-serif;
 }
 /**
  *   Main Menu
