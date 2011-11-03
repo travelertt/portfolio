@@ -339,8 +339,6 @@ div.gr_grid_book_container:hover {
  */
 .field-name-body .media-image {
   margin: 10px 0;
-}
-.field-name-body .media-image img {
   width: 100%;
   height: inherit;
 }
@@ -406,7 +404,7 @@ div.gr_grid_book_container:hover {
   text-align: center;
   overflow: hidden;
   margin: 0 0 10px 0px;
-  right: -20px;
+  right: 0;
 }
 /**
  *   Projects Footer
@@ -543,9 +541,11 @@ div.gr_grid_book_container:hover {
 .ds-top-layer > div {
   padding:0 1em;
 }
-.ds-top-layer h2 {
+.ds-top-layer h2 a{
   color: #FFF;
   margin-bottom: 0;
   line-height: 1.1em;
-  font-size: 2em;
+  font-size: 1.1em;
+  text-decoration: none;
+  pointer-events:none;
 }

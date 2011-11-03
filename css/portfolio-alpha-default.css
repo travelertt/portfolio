@@ -200,3 +200,11 @@ nav.navigation {
 #block-system-main-menu ul.menu {
 
 }
+/**
+ *   Content Media Images
+ */
+.field-name-body .media-image {
+
+  width: inherit;
+  height: inherit;
+}
