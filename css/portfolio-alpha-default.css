@@ -138,6 +138,9 @@ nav.navigation {
   text-shadow: -1px 0px 1px #333 ;
   font-family: "Cabin", "Arial", sans-serif;
 }
+#tt-welcome .pane-content {
+  margin-top: 5%;
+}
 #tt-welcome p {
   z-index: 100;
   margin-bottom: inherit;

@@ -23,18 +23,17 @@
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
-  
-  <?php if ($top_layer): ?>
-    <div class="ds-top-layer<?php print $top_layer_classes; ?>">
-      <?php print $top_layer; ?>
-    </div>
-  <?php endif; ?>
 
+  <?php if ($top_layer): ?>
+    <a href="<?php print $node_url; ?>">
+      <div class="ds-top-layer<?php print $top_layer_classes; ?>">
+        <?php print $top_layer; ?>
+      </div>
+    </a>
+  <?php endif; ?>
   <?php if ($bottom_layer): ?>
     <div class="ds-bottom-layer<?php print $bottom_layer_classes; ?>">
       <?php print $bottom_layer; ?>
-      <?php dpm($bottom_layer); ?>
     </div>
   <?php endif; ?>
-
 </div>
