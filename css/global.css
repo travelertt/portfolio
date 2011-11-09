@@ -22,13 +22,6 @@ body {
   background-image: -ms-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
   background-image: radial-gradient(50% top, circle cover, rgba(229,236,255,0.2) 22%,rgba(229,255,248,0.1) 66%,rgba(168,235,255,0.5) 100%);
 }
-#region-menu {
-/*  height: 130px;*/
-}
-.views-nivo-slider {
-  max-width: 100%;
- width: inherit;
-}
 .navigation {
   margin: 23px 0 0 0;
   padding: 10px 0;
@@ -111,56 +104,74 @@ hgroup.site-name-slogan {
     color-stop(1, #333333)
   ),  url(../images/200-100-5-monochrome.png);
   border-bottom: 3px solid #0069ff;
-  padding: 5px 0 10px 0;
+  padding: 5px 0 0 0;
 }
 /**
  *   Main menu
  */
-#block-system-main-menu {
-  text-align: right;
-  margin-bottom: 0;
+#region-menu {
+  background: rgba(0,0,0,0.2);
   margin-left: 0;
   margin-right: 0;
-  margin-top: 16px;
-  padding-bottom: 10px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 10px;
+  margin-top: 1em;
+}
+#block-system-main-menu {
+  text-align: right;
   text-align: right;
   vertical-align: middle;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1em;
 }
 #block-system-main-menu ul.menu {
   
 }
 #block-system-main-menu ul.menu li{
   background: #666;
-  padding: 8px 16px;
-  border: 1px outset #333333;
-  border-radius: 12px;
-  background: rgb(125,126,125); /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZjRmNGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(79,79,79,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(79,79,79,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(79,79,79,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(79,79,79,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(79,79,79,1) 100%); /* IE10+ */
-  background: linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(79,79,79,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#4f4f4f',GradientType=0 ); /* IE6-8 */
+  padding: 0.75em 1.5em 0.6em;
+  border-radius: 3em;
+  background: #666;
+}
+#block-system-main-menu ul.menu li a {
+  font-family: "Cabin", "Arial", sans-serif;
+  text-decoration: none;
+  font-weight: 100;
+  color: #f0f0f0;
+  font-size: 1.3em;
 }
 ul.menu li {
   display: inline;
   list-style-type: none;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   padding-bottom: 1em;
 }
-#block-system-main-menu a {
-  font-family: "Cabin", "Arial", sans-serif;
-  text-decoration: none;
-  font-weight: 100;
-  color: #DDD;
-  font-size: 1.3em;
+/**
+ *   Tabs Menu
+ */
+ul.primary {
+  border:none;
+  margin-bottom: 1.7em;
+}
+ul.primary li{
+
+}
+ul.primary li a {
+  border: 1px solid #2d6fff;
+  background:#0069FF;
+  color:#F0F8FF;
+  padding: 0.7em 1.4em;
+  border-radius: 2em;
+}
+ul.primary li.active a {
+  background: #F0F8FF;
+  color:#333333;
+  border: 1px solid #BBB;
+}
+ul.primary li a:hover {
+  background: #68a2ff;
+  color:#F0F8FF;
 }
 .gr_grid_book_container {
   /*width: 93px !important;*/
@@ -346,10 +357,10 @@ div.gr_grid_book_container:hover {
 /**
  *   Main Article Image
  */
-.view-mode-large_teaser .field-name-field-image {
+.field-name-field-image {
   position: relative;
 }
-.view-mode-large_teaser .field-name-field-image img {
+.field-name-field-image img {
   width: 100%;
   height: inherit;
 }
@@ -422,8 +433,8 @@ div.gr_grid_book_container:hover {
   position: relative;
   text-align: center;
   overflow: hidden;
-  margin: 0 0 10px 0px;
-  right: 0;
+  margin: 0 0 10px 0;
+  left: 0;
 }
 /**
  *   Projects Footer
