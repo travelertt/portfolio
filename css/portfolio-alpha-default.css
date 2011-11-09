@@ -11,18 +11,18 @@ body {
   background: url(../images/handmadepaper.png) scroll repeat;
 }
 #page {
-  background-color:#f0f8ff; 
-  background-image: -moz-radial-gradient(center 200px, circle, #FCFCFC 0%,rgba(235,235,255,0) 600px),-moz-linear-gradient(0% 400px 90deg,rgba(168,235,255,0.0), rgba(168,235,255,0.5)), url(../images/handmadepaper.png); 
-  background-image: -webkit-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
-  background-image: -o-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
-  background-image: -ms-radial-gradient(50% 150px, circle cover, rgba(229,236,255,0.5) 22%,rgba(235,235,235,0.5) 66%,rgba(229,255,248,0.5) 441%); 
-  background-image: radial-gradient(50% top, circle cover, rgba(229,236,255,0.2) 22%,rgba(229,255,248,0.1) 66%,rgba(168,235,255,0.5) 100%);
+  background-color: #f0f8ff;
+  background-image: -moz-radial-gradient(center 200px, circle, #fcfcfc 0%, rgba(235, 235, 255, 0) 600px), -moz-linear-gradient(0% 400px 90deg, rgba(168, 235, 255, 0), rgba(168, 235, 255, 0.5)), url(../images/handmadepaper.png);
+  background-image: -webkit-radial-gradient(50% 150px, circle cover, rgba(229, 236, 255, 0.5) 22%, rgba(235, 235, 235, 0.5) 66%, rgba(229, 255, 248, 0.5) 441%);
+  background-image: -o-radial-gradient(50% 150px, circle cover, rgba(229, 236, 255, 0.5) 22%, rgba(235, 235, 235, 0.5) 66%, rgba(229, 255, 248, 0.5) 441%);
+  background-image: -ms-radial-gradient(50% 150px, circle cover, rgba(229, 236, 255, 0.5) 22%, rgba(235, 235, 235, 0.5) 66%, rgba(229, 255, 248, 0.5) 441%);
+  background-image: radial-gradient(50% top, circle cover, rgba(229, 236, 255, 0.2) 22%, rgba(229, 255, 248, 0.1) 66%, rgba(168, 235, 255, 0.5) 100%);
 }
 nav.navigation {
   margin: 23px 0 0 0;
   padding: 10px 0;
   text-align: right;
-  vertical-align:middle;
+  vertical-align: middle;
   font-size: 1.3em;
 }
 .navigation ul.inline li {
@@ -39,8 +39,8 @@ nav.navigation {
   margin-bottom: 30px;
   width: 940px;
 }
-#region-branding{
-    margin-top: 10px;
+#region-branding {
+  margin-top: 10px;
 }
 #zone-branding {
   margin-bottom: 30px;
@@ -59,19 +59,13 @@ nav.navigation {
   vertical-align: middle;
 }
 #zone-menu-wrapper {
-  background-color:#474747; 
-  background:  url(../images/100-100-3-monochrome.png),  linear-gradient(bottom, #474747 0%, #333333 100%);
-  background:  url(../images/200-100-5-monochrome.png), -o-linear-gradient(bottom, #474747 0%, #333333 100%);
-  background:  url(../images/100-100-3-monochrome.png), -moz-linear-gradient(bottom, #474747 0%, #333333 100%);
-  background: -webkit-linear-gradient(bottom, #474747 0%, #333333 100%),  url(../images/200-100-5-monochrome.png);
-  background: -ms-linear-gradient(bottom, #474747 0%, #333333 100%),  url(../images/200-100-5-monochrome.png);
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0, #474747),
-    color-stop(1, #333333)
-  ),  url(../images/200-100-5-monochrome.png);
+  background-color: #474747;
+  background: url(../images/100-100-3-monochrome.png), linear-gradient(bottom, #474747 0%, #333333 100%);
+  background: url(../images/200-100-5-monochrome.png), -o-linear-gradient(bottom, #474747 0%, #333333 100%);
+  background: url(../images/100-100-3-monochrome.png), -moz-linear-gradient(bottom, #474747 0%, #333333 100%);
+  background: -webkit-linear-gradient(bottom, #474747 0%, #333333 100%), url(../images/200-100-5-monochrome.png);
+  background: -ms-linear-gradient(bottom, #474747 0%, #333333 100%), url(../images/200-100-5-monochrome.png);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #474747), color-stop(1, #333333)), url(../images/200-100-5-monochrome.png);
   border-bottom: 3px solid #0069ff;
   padding: 5px 0 25px 0;
 }
@@ -89,7 +83,7 @@ nav.navigation {
   padding: 15px 15px;
 }
 #zone-content .content article .node-title a {
-  text-shadow: 0px -1px 0px #999;
+  text-shadow: 0px -1px 0px #999999;
   text-decoration: none;
 }
 #zone-content .content article h2.node-title a:hover {
@@ -116,7 +110,7 @@ nav.navigation {
 }
 #zone-content .content article nav.links {
   padding: 0 15px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 /**
  *   Front Page Intro
@@ -125,7 +119,7 @@ nav.navigation {
   font-size: 3.4em;
   line-height: 1em;
   color: #999;
-  text-shadow: -1px 0px 1px #333 ;
+  text-shadow: -1px 0px 1px #333333;
   font-family: "Cabin", "Arial", sans-serif;
 }
 #tt-welcome .pane-content {
@@ -160,19 +154,13 @@ nav.navigation {
 .tt-mail-me {
   left: 6px;
 }
-.tt-mail-me img{
+.tt-mail-me img {
   width: 100%;
 }
 #zone-postscript-wrapper {
   border-top: 3px solid #666;
   background-image: url(../images/carbon_fibre_v2.png);
   color: #F0F8FF;
-}
-#zone-postscript-wrapper .tt-projects .views-row {
-  
-}
-#zone-postscript-wrapper .tt-projects .views-field-title {
-  
 }
 #zone-postscript-wrapper .tt-projects .views-field-field-image {
   float: left;
@@ -190,14 +178,10 @@ nav.navigation {
 /**
  *   Main Menu
  */
-#block-system-main-menu ul.menu {
-
-}
 /**
  *   Content Media Images
  */
 .field-name-body .media-image {
-
   width: inherit;
   height: inherit;
 }

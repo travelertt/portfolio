@@ -10,13 +10,7 @@
 h1 {
   font-size: 2.5em;
 }
-div#page {
-
-}
-#zone-postscript-wrapper .tt-projects .views-field-field-image {
-
-}
-#tt-welcome .pane-content{
+#tt-welcome .pane-content {
   margin-top: 15%;
 }
 .tt-mail-me {
@@ -25,7 +19,6 @@ div#page {
 #block-system-main-menu ul.menu {
   float: right;
 }
-#block-system-main-menu ul.menu li{
-  
+#block-system-main-menu ul.menu li {
   border: none;
 }
