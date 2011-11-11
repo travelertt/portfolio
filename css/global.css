@@ -1,12 +1,15 @@
-/* This file will hold the main styles for your website. 
+/** This file will hold the main styles for your website. 
  * 
- * -- Color Scheme --
- * Teal   M Teal  D Teal  Bright  Light
- * 206973 274044  022B31  85DBE7  BCE1E7
- * 
- * BRN    Medium  Dark    Bright  Light
- * BC7432 6F563F  502804  F3BD8A  F3DBC5
- * */
+ **/
+/**
+ *   Varibles
+ */
+/**
+ *   Mixins
+ */
+/**
+ *   Body
+ */
 body {
   font-size: 16px;
   font-family: "Maven Pro", Arial, "MS Trebuchet", sans-serif;
@@ -35,11 +38,11 @@ body {
   margin-right: 1em;
 }
 .navigation ul.inline li:hover {
-  border-bottom: 1px solid #F0F8FF;
+  border-bottom: 1px solid #f0f8ff;
 }
 .content a {
   transition: all 0.3 linear;
-  color: #6699CC;
+  color: #6699cc;
 }
 h1,
 h2,
@@ -127,7 +130,8 @@ hgroup.site-name-slogan {
   background: #666;
   padding: 0.75em 1.5em 0.6em;
   border-radius: 3em;
-  background: #666;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
 }
 #block-system-main-menu ul.menu li a {
   font-family: "Cabin", "Arial", sans-serif;
@@ -151,20 +155,21 @@ ul.primary {
   margin-bottom: 1.7em;
 }
 ul.primary li a {
-  border: 1px solid #2d6fff;
-  background: #0069FF;
-  color: #F0F8FF;
-  padding: 0.7em 1.4em;
-  border-radius: 2em;
+  background: none;
+  border: none;
+  color: #333333;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 ul.primary li.active a {
-  background: #F0F8FF;
-  color: #333333;
-  border: 1px solid #BBB;
+  background: #0069ff;
+  color: #f0f8ff;
 }
 ul.primary li a:hover {
   background: #68a2ff;
-  color: #F0F8FF;
+  color: #f0f8ff;
 }
 .gr_grid_book_container {
   /*width: 93px !important;*/
@@ -193,7 +198,7 @@ div.gr_grid_book_container:hover {
   list-style-type: none;
 }
 .tt-share a {
-  color: #F0F8FF;
+  color: #f0f8ff;
   font-size: 0.8em;
   padding: 12px 10px 12px 50px;
   background-position: 7px center;
@@ -206,7 +211,7 @@ div.gr_grid_book_container:hover {
   transition: all 1s ease-in-out;
 }
 .tt-share a:hover {
-  color: #6699CC;
+  color: #6699cc;
   background: rgba(0, 0, 0, 0.25);
   background-position: 7px center;
   background-repeat: no-repeat;
@@ -312,6 +317,7 @@ div.gr_grid_book_container:hover {
   position: absolute;
   width: 100%;
   padding-top: 2em;
+  text-decoration: none;
 }
 .node-type-article .field-name-title * {
   height: 100%;
@@ -324,16 +330,18 @@ div.gr_grid_book_container:hover {
 }
 #zone-content .content article h2.node-title a:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #zone-content .content article .content {
   margin-bottom: 15px;
-  font-size: 1.1em;
+  font-size: 1.0em;
 }
 #zone-content .content article .content .field-name-field-tags .field-items .field-item {
   float: left;
   list-style: none;
   border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
   background: #BCE1E7;
 }
 #zone-content .content article .content .field-name-field-tags .field-items .field-item a {
@@ -369,17 +377,17 @@ div.gr_grid_book_container:hover {
 /**
  *   Teaser
  */
-.node-teaser {
+.node-article.node-teaser {
   margin: 1em 0;
   font-size: 0.8em;
 }
-.node-teaser .group-left {
+.node-article.node-teaser .group-left {
   width: inherit;
 }
-.node-teaser .field-name-field-image {
+.node-article.node-teaser .field-name-field-image {
   padding: 0 1.1em 0 0;
 }
-.node-teaser h2 a {
+.node-article.node-teaser h2 a {
   line-height: 1.2em;
   text-decoration: none;
 }
@@ -391,25 +399,28 @@ div.gr_grid_book_container:hover {
   font-size: 1.8em;
   line-height: 1em;
   color: #999;
-  text-shadow: -1px 0px 1px #333333;
+  text-shadow: 0 -1px 1px #333333;
   font-family: "Cabin", "Arial", sans-serif;
 }
 #tt-welcome p {
   z-index: 100;
   margin-bottom: inherit;
-  line-height: inherit;
   line-height: 1.2em;
-  text-align: justify;
 }
 #tt-welcome p strong {
   font-size: 1.5em;
   font-weight: bolder;
+}
+#tt-welcome big {
+  white-space: nowrap;
+  font-size: 1.25em;
 }
 #tt-welcome em {
   color: #6699cc;
   font-style: normal;
   font-weight: bold;
   font-size: 1.9em;
+  white-space: nowrap;
 }
 #tt-welcome .tt-intro-large {
   font-size: 0.8em;
@@ -441,47 +452,62 @@ div.gr_grid_book_container:hover {
 /**
  *   Projects Footer
  */
-.tt-projects .views-field-field-image {
+.tt-projects .group-left {
+  float: left;
+  width: inherit;
+  margin-right: 1em;
+}
+.tt-projects .field-name-field-image {
   border-radius: 5px;
-  box-shadow: 1px 1px 3px #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   margin-left: 1em;
 }
-.tt-projects .views-field-field-image img {
-  border: 2px solid #FCFCFC;
+.tt-projects .field-name-field-image img {
+  border: 3px solid #FCFCFC;
   border-radius: 5px;
-  box-shadow: 1px 1px 3px #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: inherit;
 }
 #zone-postscript-wrapper {
   border-top: 3px solid #666;
   background-image: url(../images/carbon_fibre_v2.png);
-  color: #F0F8FF;
+  color: #f0f8ff;
 }
-#zone-postscript-wrapper .tt-projects .views-row {
+.tt-projects .views-row {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 1em 0 1em 0;
+  margin-left: 0;
+  margin-right: 0;
 }
-#zone-postscript-wrapper .tt-projects .views-field-title {
+.tt-projects .field-name-title {
   font-size: 2em;
-  margin: 10px 0.5em 10px;
+  margin: 0 0.5em 10px;
+  line-hieght: 1em;
 }
-#zone-postscript-wrapper .tt-projects .views-field-title a {
+.tt-projects .field-name-title a {
   color: #DDDDDD;
   text-decoration: none;
   font-size: 0.8em;
 }
-#zone-postscript-wrapper .tt-projects .views-field-field-image {
-  margin-left: 1em;
-}
-#zone-postscript-wrapper .tt-projects .views-field-body {
+.tt-projects .field-name-body {
   margin-left: 1em;
   margin-right: 1em;
 }
-#zone-postscript-wrapper .tt-projects .views-field-field-desc {
+.tt-projects .field-name-field-desc {
   margin-left: 1em;
   margin-right: 1em;
+}
+.tt-projects .field-name-field-url {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 0.8em;
 }
 /**
  *   Tags: views
@@ -494,23 +520,24 @@ div.gr_grid_book_container:hover {
   font-size: 0.75em;
   background: #999;
   padding: 4px 10px 4px 10px;
-  border-radius: 7px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   color: #fff;
   text-shadow: 0 1px 0 #333;
   text-decoration: none;
   box-shadow: 0 1px 2px #333;
 }
-.tt-projects .views-field-field-url {
-  margin-left: 1em;
-  font-size: 0.8em;
-}
 /**
  *   Tags: fields
  */
+.field-name-field-tags {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 .field-name-field-tags .field-item {
   display: inline;
   margin-right: 5px;
-  float: left;
 }
 .field-name-field-tags a {
   font-size: 0.75em;
@@ -529,21 +556,21 @@ div.gr_grid_book_container:hover {
   background: url(../images/dark-metal.jpg) scroll repeat;
   background-color: #808080;
   border-top: 3px solid #808080;
-  color: #F0F8FF;
+  color: #f0f8ff;
 }
 #zone-footer-wrapper .block-title {
   font-size: 2em;
   line-height: 1.8em;
-  border-bottom: 1px solid #F0F8FF;
+  border-bottom: 1px solid #f0f8ff;
   margin-bottom: 20px;
-  color: #F0F8FF;
+  color: #f0f8ff;
 }
 /**
  *   Lower Footer
  */
 #zone-lower-menu-wrapper {
   font-size: 0.85em;
-  color: #F0F8FF;
+  color: #f0f8ff;
   text-shadow: 0 -1px 0 #333333;
   background: rgba(27, 37, 64, 0.9);
   padding: 1.8em 0 1.5em;
@@ -553,7 +580,7 @@ div.gr_grid_book_container:hover {
  *   Lower Footer Menu Block
  */
 #block-menu-menu-footer-menu a {
-  color: #F0F8FF;
+  color: #f0f8ff;
   text-decoration: none;
   text-shadow: 0 -1px 0 #333333;
 }
