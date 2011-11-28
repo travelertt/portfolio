@@ -10,12 +10,25 @@
 /**
  *   Body
  */
+* {
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
 body {
   font-size: 16px;
   font-family: "Maven Pro", Arial, "MS Trebuchet", sans-serif;
   line-height: 1.5em;
   background: url(../images/handmadepaper.png) scroll repeat;
   background: yellow;
+}
+img,
+embed,
+object,
+video,
+iframe {
+  max-width: 100%;
 }
 #page {
   background-color: #f0f8ff;
@@ -41,8 +54,10 @@ body {
   border-bottom: 1px solid #f0f8ff;
 }
 .content a {
-  transition: all 0.3 linear;
   color: #6699cc;
+}
+.content a:hover {
+  color: #cc9966;
 }
 h1,
 h2,
@@ -209,42 +224,25 @@ div.gr_grid_book_container:hover {
   -o-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  background-image: url("../images/sprites-social-dark.png");
 }
 .tt-share a:hover {
   color: #6699cc;
-  background: rgba(0, 0, 0, 0.25);
-  background-position: 7px center;
-  background-repeat: no-repeat;
 }
 #tt-share-forrst {
-  background-image: url(../images/32-x-32px/forrst_dark.png);
-}
-#tt-share-forrst:hover {
-  background-image: url(../images/32-x-32px/forrst_active.png);
+  background-position: -3px -162px;
 }
 #tt-share-vimeo {
-  background-image: url(../images/32-x-32px/vimeo_dark.png);
-}
-#tt-share-vimeo:hover {
-  background-image: url(../images/32-x-32px/vimeo_active.png);
+  background-position: -3px -214px;
 }
 #tt-share-linkedin {
-  background-image: url(../images/32-x-32px/in_dark.png);
-}
-#tt-share-linkedin:hover {
-  background-image: url(../images/32-x-32px/in_active.png);
+  background-position: -3px -110px;
 }
 #tt-share-email {
-  background-image: url(../images/32-x-32px/vcard_dark.png);
-}
-#tt-share-email:hover {
-  background-image: url(../images/32-x-32px/vcard_active.png);
+  background-position: -3px -6px;
 }
 #tt-share-twitter {
-  background-image: url(../images/32-x-32px/twitter_dark.png);
-}
-#tt-share-twitter:hover {
-  background-image: url(../images/32-x-32px/twitter_active.png);
+  background-position: -3px -58px;
 }
 #zone-user {
   background: #333;
@@ -336,18 +334,6 @@ div.gr_grid_book_container:hover {
   margin-bottom: 15px;
   font-size: 1.0em;
 }
-#zone-content .content article .content .field-name-field-tags .field-items .field-item {
-  float: left;
-  list-style: none;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  background: #BCE1E7;
-}
-#zone-content .content article .content .field-name-field-tags .field-items .field-item a {
-  padding: 3px 7px 3px 3px;
-  display: block;
-}
 #zone-content .content article footer {
   padding: 0 15px;
   margin-bottom: 15px;
@@ -395,12 +381,14 @@ div.gr_grid_book_container:hover {
  *   Front Page Intro
  */
 #tt-welcome {
+  font-family: "Cabin", "Arial", sans-serif;
   margin-top: 0em;
   font-size: 1.8em;
   line-height: 1em;
   color: #999;
-  text-shadow: 0 -1px 1px #333333;
-  font-family: "Cabin", "Arial", sans-serif;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 #tt-welcome p {
   z-index: 100;
@@ -410,6 +398,12 @@ div.gr_grid_book_container:hover {
 #tt-welcome p strong {
   font-size: 1.5em;
   font-weight: bolder;
+}
+#tt-welcome p .tt-intro-small {
+  font-size: 0.8em;
+  color: #333333;
+  line-height: 1em;
+  font-weight: lighter;
 }
 #tt-welcome big {
   white-space: nowrap;
@@ -425,12 +419,6 @@ div.gr_grid_book_container:hover {
 #tt-welcome .tt-intro-large {
   font-size: 0.8em;
   text-align: left;
-}
-#tt-welcome p.tt-intro-small {
-  font-size: 0.8em;
-  color: #333333;
-  line-height: 1em;
-  font-weight: lighter;
 }
 /**
  *   Hire Me now Sticker
@@ -452,10 +440,22 @@ div.gr_grid_book_container:hover {
 /**
  *   Projects Footer
  */
+#zone-postscript-wrapper {
+  border-top: 3px solid #666;
+  background-image: url(../images/carbon_fibre_v2.png);
+  color: #f0f8ff;
+}
 .tt-projects .group-left {
   float: left;
   width: inherit;
+}
+.tt-projects .group-left > div {
+  margin-left: 1em;
   margin-right: 1em;
+}
+.tt-projects .group-right > div {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .tt-projects .field-name-field-image {
   border-radius: 5px;
@@ -469,11 +469,6 @@ div.gr_grid_book_container:hover {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   width: inherit;
-}
-#zone-postscript-wrapper {
-  border-top: 3px solid #666;
-  background-image: url(../images/carbon_fibre_v2.png);
-  color: #f0f8ff;
 }
 .tt-projects .views-row {
   background: rgba(0, 0, 0, 0.2);
@@ -510,6 +505,49 @@ div.gr_grid_book_container:hover {
   font-size: 0.8em;
 }
 /**
+ *   Tags: fields
+ */
+.tags a {
+  font-size: 0.75em;
+  background: #999999;
+  padding: 0.25em 1em;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.tags a:hover {
+  background: #cccccc;
+  color: #000000;
+}
+.field-name-field-tags .field-item {
+  display: inline;
+  margin-right: 0.5em;
+}
+.field-name-field-tags a {
+  font-size: 0.75em;
+  background: #999999;
+  padding: 0.25em 1em;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.field-name-field-tags a:hover {
+  background: #cccccc;
+  color: #000000;
+}
+/**
  *   Tags: views
  */
 .views-field-field-tags {
@@ -518,36 +556,21 @@ div.gr_grid_book_container:hover {
 }
 .views-field-field-tags a {
   font-size: 0.75em;
-  background: #999;
-  padding: 4px 10px 4px 10px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  color: #fff;
-  text-shadow: 0 1px 0 #333;
-  text-decoration: none;
-  box-shadow: 0 1px 2px #333;
-}
-/**
- *   Tags: fields
- */
-.field-name-field-tags {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-.field-name-field-tags .field-item {
-  display: inline;
-  margin-right: 5px;
-}
-.field-name-field-tags a {
-  font-size: 0.75em;
-  background: #999;
+  background: #999999;
   padding: 0.25em 1em;
   border-radius: 7px;
   color: #fff;
-  text-shadow: 0 1px 0 #333;
   text-decoration: none;
-  box-shadow: 0 1px 2px #333;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.views-field-field-tags a:hover {
+  background: #cccccc;
+  color: #000000;
 }
 /**
  *   Footer Area
@@ -634,4 +657,7 @@ div.gr_grid_book_container:hover {
 }
 .view-mode-large_teaser .ds-top-layer .field-name-post-date {
   font-size: 0.8em;
+}
+#region-lower-second .content p {
+  text-align: left;
 }
