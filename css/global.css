@@ -526,7 +526,7 @@ div.gr_grid_book_container:hover {
   color: #000000;
 }
 .field-name-field-tags .field-item {
-  display: inline;
+  display: inline-block;
   margin-right: 0.5em;
 }
 .field-name-field-tags a {
