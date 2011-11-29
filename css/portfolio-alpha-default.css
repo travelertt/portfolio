@@ -94,16 +94,6 @@ nav.navigation {
   margin-bottom: 15px;
   font-size: 1.1em;
 }
-#zone-content .content article .content .field-name-field-tags .field-items .field-item {
-  float: left;
-  list-style: none;
-  border-radius: 15px;
-  background: #BCE1E7;
-}
-#zone-content .content article .content .field-name-field-tags .field-items .field-item a {
-  padding: 3px 7px 3px 3px;
-  display: block;
-}
 #zone-content .content article footer {
   padding: 0 15px;
   margin-bottom: 15px;

@@ -356,10 +356,6 @@ div.gr_grid_book_container:hover {
 .field-name-field-image {
   position: relative;
 }
-.field-name-field-image img {
-  width: 100%;
-  height: inherit;
-}
 /**
  *   Teaser
  */
