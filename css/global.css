@@ -30,6 +30,10 @@ video,
 iframe {
   max-width: 100%;
 }
+.panel-display {
+  margin-left: -10px;
+  margin-right: -10px;
+}
 #page {
   background-color: #f0f8ff;
   background-image: -moz-radial-gradient(center 200px, circle, #fcfcfc 0%, rgba(235, 235, 255, 0) 600px), -moz-linear-gradient(0% 400px 90deg, rgba(168, 235, 255, 0), rgba(168, 235, 255, 0.5)), url(../images/handmadepaper.png);
