@@ -263,7 +263,7 @@ div.gr_grid_book_container:hover {
   padding: 20px 0 40px;
 }
 #zone-content .content article:first-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 0;
   margin-top: 0;
 }
 #zone-content .content .node-title {
@@ -347,7 +347,7 @@ div.gr_grid_book_container:hover {
  */
 .field-name-body .media-image {
   margin: 10px 0;
-  width: 100%;
+  max-width: 100%;
   height: inherit;
 }
 /**

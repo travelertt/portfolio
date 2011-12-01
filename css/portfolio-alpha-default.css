@@ -75,10 +75,6 @@ nav.navigation {
 #zone-content-wrapper {
   padding: 20px 0 40px;
 }
-#zone-content .content article:first-of-type {
-  margin-bottom: 40px;
-  margin-top: 0;
-}
 #zone-content .content .node-title {
   padding: 15px 15px;
 }
