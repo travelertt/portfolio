@@ -379,7 +379,7 @@ div.gr_grid_book_container:hover {
   position: relative;
   margin-bottom: 2em;
 }
-.node-type-article .group-header .field-name-title {
+.node-type-article .group-header .group-image-layover {
   color: #FFF;
   font-size: 1.1em;
   text-decoration: none;
@@ -410,14 +410,16 @@ div.gr_grid_book_container:hover {
   bottom: 0;
   display: block;
   position: absolute;
-}
-.node-type-article .field-name-title * {
-  height: 100%;
-}
-.node-type-article .field-name-title .title {
-  color: #FFF;
-  padding: 0.25em 0.5em;
   line-height: 1em;
+}
+.node-type-article .group-header .group-image-layover .field-items {
+  padding: 0.5em 1em;
+}
+.node-type-article .group-header .group-image-layover .field-name-title .title {
+  color: #FFF;
+}
+.field-group-format-toggler {
+  display: none;
 }
 #zone-content .content article h2.node-title a:hover {
   color: #000;

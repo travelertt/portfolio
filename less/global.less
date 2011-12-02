@@ -400,25 +400,24 @@ div.gr_grid_book_container:hover {
   position: relative;
   margin-bottom: 2em;
 }
-.node-type-article .group-header .field-name-title {
+.node-type-article .group-header .group-image-layover {
   // Title over Image effect
   .title-over-image;
   
   bottom: 0;
   display: block;
   position: absolute;
-}
-.node-type-article .field-name-title * {
-  height: 100%;
-}
-.node-type-article .field-name-title .title {
-  color: #FFF;
-
-  padding: 0.25em 0.5em;
   line-height: 1em;
-}
-.node-type-article .group-left {
   
+  .field-items {
+    padding: 0.5em 1em;
+  }
+  .field-name-title .title {
+    color: #FFF;
+  }
+}
+.field-group-format-toggler {
+  display: none;
 }
 #zone-content .content article h2.node-title a:hover {
   color: #000;
@@ -449,9 +448,9 @@ div.gr_grid_book_container:hover {
  */
 .field-name-field-image {
   position: relative;
-}
-.field-name-field-image img {
-  height: inherit;
+   img {
+    height: inherit;
+  }
 }
 /**
  *   Teaser
