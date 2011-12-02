@@ -379,7 +379,7 @@ div.gr_grid_book_container:hover {
   position: relative;
   margin-bottom: 2em;
 }
-.node-type-article .group-header .text-layover {
+.node-type-article .group-header .group-text-layover {
   color: #FFF;
   font-size: 1.1em;
   text-decoration: none;
@@ -412,10 +412,10 @@ div.gr_grid_book_container:hover {
   position: absolute;
   line-height: 1em;
 }
-.node-type-article .group-header .text-layover .field-items {
+.node-type-article .group-header .group-text-layover .field-items {
   padding: 0.5em 1em;
 }
-.node-type-article .group-header .text-layover .field-name-title .title {
+.node-type-article .group-header .group-text-layover .field-name-title .title {
   color: #FFF;
 }
 .field-group-format-toggler {
