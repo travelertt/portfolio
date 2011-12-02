@@ -415,7 +415,7 @@ div.gr_grid_book_container:hover {
 .node-type-article .group-header .group-text-layover .field-items {
   padding: 0.5em 1em;
 }
-.node-type-article .group-header .group-text-layover .field-name-title h2 {
+.node-type-article .group-header .group-text-layover .field-name-title .title {
   color: #FFF;
   font-size: 2em;
   line-height: 1em;
