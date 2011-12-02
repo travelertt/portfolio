@@ -29,7 +29,6 @@ object,
 video,
 iframe {
   max-width: 100%;
-  height: inherit;
 }
 .panel-display {
   margin-left: -10px;
@@ -378,6 +377,7 @@ div.gr_grid_book_container:hover {
 }
 .node-type-article .group-header {
   position: relative;
+  margin-bottom: 2em;
 }
 .node-type-article .group-header .field-name-title {
   color: #FFF;
@@ -416,7 +416,6 @@ div.gr_grid_book_container:hover {
 }
 .node-type-article .field-name-title .title {
   color: #FFF;
-  text-shadow: 0 1px 0px #333;
   padding: 0.25em 0.5em;
   line-height: 1em;
 }
@@ -449,6 +448,9 @@ div.gr_grid_book_container:hover {
  */
 .field-name-field-image {
   position: relative;
+}
+.field-name-field-image img {
+  height: inherit;
 }
 /**
  *   Teaser
