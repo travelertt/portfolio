@@ -41,7 +41,7 @@
 /**
  *   Body
  */
-* {
+a, button {
   .transition;
 }
 body {
@@ -55,7 +55,30 @@ body {
 img, embed, object, video, iframe {
   max-width: 100%;
 }
-// Fix Panels Problem
+// Code Styleing without plugin
+code {
+  display: block;
+  white-space: pre;
+  overflow-x:auto;
+  font-size: 0.8em;
+  font-family: monospace;
+  line-height: 1.5em;
+  background-color: #DDD;
+  background-color: rgba(200,200,200,0.5);
+  padding:2em 1em 1em;
+  border: dashed 3px #666666;
+
+}
+code:before {
+  content: "example code";
+  float:right;
+  font-size:3em;
+  color: #FFFFFF;
+  opacity: 0.25;
+  position: relative;
+  bottom:0.3em;
+}
+// Fix Panels Problem == Remove
 .panel-display {
     margin-left: -10px;
     margin-right: -10px;
@@ -399,18 +422,19 @@ div.gr_grid_book_container:hover {
 .node-type-article .group-header {
   position: relative;
   margin-bottom: 2em;
+
 }
 .node-type-article .group-header .group-text-layover {
   // Title over Image effect
   .title-over-image;
-  
+  padding: 0.5em 0;
   bottom: 0;
   display: block;
   position: absolute;
   line-height: 1em;
   
   .field-items {
-    padding: 0.5em 1em;
+    padding: 0 1em;
   }
   .field-name-title .title {
     color: #FFF;
