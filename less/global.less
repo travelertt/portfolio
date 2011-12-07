@@ -32,7 +32,7 @@
   -webkit-box-shadow: @val;
   -moz-box-shadow:    @val;
 }
-.transition (@var:all 0.2s ease-in ) {
+.transition (@var:all 0.1s ease-in ) {
   transition: @var;
   -moz-transition: @var;
   -o-transition: @var;
@@ -41,7 +41,7 @@
 /**
  *   Body
  */
-a, button {
+a:not(.contextual-links-trigger) , button, div {
   .transition;
 }
 body {
@@ -275,11 +275,6 @@ div.gr_grid_book_container:hover {
   background-position: 7px center;
   background-repeat: no-repeat;
   line-height: 3em;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out; 
-  transition: all 1s ease-in-out;
   background-image: url("../images/sprites-social-dark.png");
 }
 .tt-share a:hover {
@@ -498,42 +493,60 @@ div.gr_grid_book_container:hover {
 /**
  *   Front Page Intro
  */
-#tt-welcome {
-  font-family: "Cabin", "Arial", sans-serif;
+/**
+ *   <p class="first-line"><strong>Hello.</strong> 
+ * I&rsquo;m <big>Tory Trone</big> 
+ * <span class="tt-intro-medium">I build</span> 
+ * <span class="tt-intro-large">cool websites</span></p>
+ * <p class="tt-intro-small second-line">I make them 
+ * <span class="tt-intro-work">work &amp; look</span> 
+ * great for mobile devices and desktop.</p>
+ */
+#tt-welcome .pane-content{
+  font-family: 'OstrichSansMedium',Arial,sans-serif,Arial,sans-serif;
   margin-top: 0em;
-  font-size: 1.8em;
+  font-size: 2.5em;
   line-height: 1em;
   color: #999;
+  text-align: left;
   .text-shadow( 0, 2px, 3px, 0.2);
+  
   p {
     z-index: 100;
     margin-bottom: inherit;
     line-height: 1.2em;
-    strong {
-      font-size: 1.5em;
-      font-weight: bolder;
-    }
-    .tt-intro-small {
-      font-size: 0.8em;
-      color: #333333;
-      line-height: 1em;
-      font-weight: lighter;
-    }
   }
+  strong {
+      font-family: 'OstrichSansRoundedMedium',Arial,sans-serif;
+      font-size: 1.7em;
+      color: #474747;
+    }
+  .tt-intro-small {
+      font-family: 'OstrichSansMedium',Arial,sans-serif;
+      font-size: 1em;
+      color: #474747;
+      line-height: 0.8em;
+    }
   big {
-    white-space: nowrap;
-    font-size: 1.25em;
-  }
-  em {
-    color: @blue-soft;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.9em;
+    font-family: 'OstrichSansBlack',Arial,sans-serif;
+    font-size: 1.55em;
+    word-spacing: -0.1em;
+    color: @orange;
     white-space: nowrap;
   }
   .tt-intro-large {
-    font-size: 0.8em;
-    text-align: left;
+    font-family: 'OstrichSansBold',Arial,sans-serif;
+    color: @blue-soft;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7em;
+    white-space: nowrap;
+    word-spacing: -0.3em;
+  }
+  .tt-intro-medium {
+    font-family: 'OstrichSansMedium',Arial,sans-serif;
+    font-size: 0.9em;
+    white-space: nowrap;
   }
 }
 /**

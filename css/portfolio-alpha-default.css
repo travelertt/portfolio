@@ -101,39 +101,16 @@ nav.navigation {
 /**
  *   Front Page Intro
  */
-#tt-welcome {
-  font-size: 3.4em;
-  line-height: 1em;
-  color: #999;
-  text-shadow: -1px 0px 1px #333333;
-  font-family: "Cabin", "Arial", sans-serif;
-}
 #tt-welcome .pane-content {
-  margin-top: 5%;
+  font-size: 3.7em;
+  margin-top: 2%;
+  text-align: justify ;
 }
-#tt-welcome p {
-  z-index: 100;
-  margin-bottom: inherit;
-  line-height: 1.2em;
-}
-#tt-welcome p strong {
-  font-size: 1.5em;
-  font-weight: bolder;
-}
-#tt-welcome em {
-  color: #6699cc;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.9em;
-}
-#tt-welcome .tt-intro-large {
-  font-size: 0.8em;
+#tt-welcome big {
+  white-space: nowrap;
 }
 #tt-welcome p.tt-intro-small {
-  font-size: 0.8em;
-  color: #333333;
-  line-height: 1em;
-  font-weight: lighter;
+  margin-top: -7px;
 }
 .tt-mail-me {
   left: 6px;
