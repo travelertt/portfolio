@@ -10,3 +10,10 @@
 .tt-mail-me img {
   width: inherit;
 }
+/**
+ *   Front Page Intro
+ */
+#tt-welcome .pane-content {
+  margin-top: 14%;
+  font-size: 3.7em;
+}
