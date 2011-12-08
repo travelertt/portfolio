@@ -13,3 +13,9 @@ h1 {
 .tt-mail-me img {
   width: 100%;
 }
+.tt-projects .group-left {
+  width: 48%;
+}
+.tt-projects .group-right {
+  width: 52%;
+}

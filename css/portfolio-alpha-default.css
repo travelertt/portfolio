@@ -98,6 +98,13 @@ nav.navigation {
   padding: 0 15px;
   margin-bottom: 20px;
 }
+.tt-projects .group-left {
+  float: left;
+  width: 46%;
+}
+.tt-projects .group-right {
+  width: 54%;
+}
 /**
  *   Front Page Intro
  */

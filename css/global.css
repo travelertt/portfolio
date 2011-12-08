@@ -475,14 +475,14 @@ div.gr_grid_book_container:hover {
 /**
  *   Teaser
  */
-.node-article.node-teaser {
+.node-article .node-teaser {
   margin: 1em 0;
   font-size: 0.8em;
 }
-.node-article.node-teaser .group-left {
+.node-article .node-teaser .group-left {
   width: inherit;
 }
-.node-article.node-teaser .field-name-field-image {
+.node-article .node-teaser .field-name-field-image {
   padding: 0 1.1em 0 0;
 }
 .node-article.node-teaser h2 a {
@@ -534,7 +534,7 @@ div.gr_grid_book_container:hover {
 }
 #tt-welcome .pane-content big {
   font-family: 'OstrichSansBlack', Arial, sans-serif;
-  font-size: 1.55em;
+  font-size: 1.5em;
   word-spacing: -0.1em;
   color: #cc9966;
   white-space: nowrap;
@@ -579,8 +579,13 @@ div.gr_grid_book_container:hover {
   color: #f0f8ff;
 }
 .tt-projects .group-left {
-  float: left;
-  width: inherit;
+  width: 100%;
+}
+.tt-projects .group-left .field-item {
+  text-align: center;
+}
+.tt-projects .group-right {
+  width: 100%;
 }
 .tt-projects .group-left > div {
   margin-left: 1em;
