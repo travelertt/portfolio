@@ -25,7 +25,7 @@
   <?php endif; ?>
 
   <?php if ($top_layer): ?>
-    <a href="<?php print $node_url; ?>">
+    <a href="<?php print $node_url; ?>" class="ds-top-layer-link">
       <div class="ds-top-layer<?php print $top_layer_classes; ?>">
         <?php print $top_layer; ?>
       </div>
