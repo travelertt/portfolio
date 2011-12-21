@@ -1,15 +1,6 @@
-/** This file will hold the main styles for your website. 
- * 
+/** 
+ * This file will hold the main styles for your website. 
  **/
-/**
- *   Varibles
- */
-/**
- *   Mixins
- */
-/**
- *   Body
- */
 a:not(.contextual-links-trigger), button, div {
   transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
@@ -752,9 +743,8 @@ div.gr_grid_book_container:hover {
 #zone-footer-wrapper .block-title {
   font-size: 2em;
   line-height: 1.8em;
-  border-bottom: 1px solid #f0f8ff;
-  margin-bottom: 20px;
   color: #f0f8ff;
+  text-shadow: 0 0 2em #f0f8ff;
 }
 /**
  *   Lower Footer

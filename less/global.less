@@ -1,46 +1,10 @@
-/** This file will hold the main styles for your website. 
- * 
+/** 
+ * This file will hold the main styles for your website. 
  **/
-/**
- *   Varibles
- */
-@text-grey: #333;
-@medium-grey: #999;
-@blue-soft: #6699cc;
-@blue: #0069FF;
-@white-blueish: #F0F8FF;
-@orange: spin(@blue-soft, -180);
-/**
- *   Mixins
- */
-.border-radius (@radius: 5px) {
-  border-radius: @radius;
-  -moz-border-radius: @radius;
-  -webkit-border-radius: @radius;
-}
-.text-shadow (@x: 0, @y: 0, @blur: 1px, @alpha: 0.2) {
-  @val: @x @y @blur rgba(0, 0, 0, @alpha);
-  
-  text-shadow:         @val;
-  -webkit-text-shadow: @val;
-  -moz-text-shadow:    @val;
-}
-.box-shadow (@x: 0, @y: 0, @blur: 1px, @alpha:0.2) {
-  @val: @x @y @blur rgba(0, 0, 0, @alpha);
-  
-  box-shadow:         @val;
-  -webkit-box-shadow: @val;
-  -moz-box-shadow:    @val;
-}
-.transition (@var:all 0.1s ease-in ) {
-  transition: @var;
-  -moz-transition: @var;
-  -o-transition: @var;
-  -webkit-transition: @var;
-}
-/**
- *   Body
- */
+@import "colors.less";
+@import "mixins.less";
+
+// Body
 a:not(.contextual-links-trigger) , button, div {
   .transition;
 }
@@ -731,9 +695,8 @@ div.gr_grid_book_container:hover {
 #zone-footer-wrapper .block-title {
   font-size: 2em;
   line-height: 1.8em;
-  border-bottom:1px solid @white-blueish;
-  margin-bottom: 20px;
   color: @white-blueish;
+  text-shadow: 0 0 2em @white-blueish;
 }
 /**
  *   Lower Footer
