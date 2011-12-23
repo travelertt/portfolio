@@ -1,9 +1,24 @@
-// Mixins
+// Border Radius
+//
+// @param radius string
+// Radius of border
 .border-radius (@radius: 5px) {
   border-radius: @radius;
   -moz-border-radius: @radius;
   -webkit-border-radius: @radius;
 }
+// Applyes -prefixes. Default 1px blur with slight shadow
+// @param x string
+// X-axis
+//
+// @param y string
+// Y-axis
+//
+// @param blur string
+// Blur of shadow
+//
+// @param alpha Decimal
+// Set the alpha to a black shadow
 .text-shadow (@x: 0, @y: 0, @blur: 1px, @alpha: 0.2) {
   @val: @x @y @blur rgba(0, 0, 0, @alpha);
   
@@ -11,6 +26,18 @@
   -webkit-text-shadow: @val;
   -moz-text-shadow:    @val;
 }
+// Applyes -prefixes. Default 1px blur with slight shadow
+// @param x string
+// X-axis
+//
+// @param y string
+// Y-axis
+//
+// @param blur string
+// Blur of shadow
+//
+// @param alpha Decimal
+// Set the alpha to a black shadow
 .box-shadow (@x: 0, @y: 0, @blur: 1px, @alpha:0.2) {
   @val: @x @y @blur rgba(0, 0, 0, @alpha);
   
@@ -18,9 +45,18 @@
   -webkit-box-shadow: @val;
   -moz-box-shadow:    @val;
 }
+// Takes in transistion string and adds the prefixes.
 .transition (@var:all 0.1s ease-in ) {
   transition: @var;
   -moz-transition: @var;
   -o-transition: @var;
   -webkit-transition: @var;
+}
+// Takes in transform string and adds the prefixes.
+.transform(@var: rotate()) {
+  transform: @var;
+  -moz-transform: @var;
+  -webkit-transform: @var;
+  -o-transform: @var;
+  -ms-transform: @var;
 }

@@ -19,7 +19,6 @@ function portfolio_form_alter(&$form, &$form_state, $form_id) {
     //$form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search-button.png');
 
 // Add extra attributes to the text box
-    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
-    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
+    $form['search_block_form']['#attributes']['placeholder'] = "Search";
   }
 } 

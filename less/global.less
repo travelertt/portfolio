@@ -98,7 +98,7 @@ blockquote::before {
 .content a {
   color: @blue-soft;
   &:hover {
-    color: @orange;
+    color: @burnt-orange;
   }
 }
 h1, h2, h3, h4, h5, h6 {
@@ -322,8 +322,8 @@ div.gr_grid_book_container:hover {
 #zone-branding {
   margin-bottom: 30px;
 }
-#block-search-form {
-  text-align: right;
+#block-search-form input{
+  color: @gray;
 }
 #zone-content-wrapper {
   padding: 20px 0 40px;
@@ -498,59 +498,91 @@ div.gr_grid_book_container:hover {
  * <span class="tt-intro-work">work &amp; look</span> 
  * great for mobile devices and desktop.</p>
  */
-#tt-welcome .pane-content{
+.tt-welcome {
+  text-shadow: 3px 5px 4px rgba(0,0,0,0.35), 1px 1px 1px #FFF;
+  
   font-family: 'OstrichSansMedium',Arial,sans-serif,Arial,sans-serif;
   margin-top: 0.1em;
   margin-right:auto;
   margin-left:auto;
-  font-size: 1.6em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 0.725em;
   color: #999;
   text-align: left;
   width: 10.9em;
   max-width: 100%;
+  transition:  all 0.3s linear;
+
   
-  .text-shadow( 0, 2px, 3px, 0.2);
-  
-  p {
+  .line1 {
+    display:block;
+    width:100%;
+    text-align:justify;
     z-index: 100;
     margin-bottom: inherit;
     line-height: 1.2em;
-  }
-  strong {
-      font-family: 'OstrichSansRoundedMedium',Arial,sans-serif;
-      font-size: 1.7em;
-      color: #474747;
-    }
-  .first-line{
     
-  }
-  .tt-intro-small {
-      font-family: 'OstrichSansMedium',Arial,sans-serif;
-      font-size: 1em;
-      color: #474747;
-      line-height: 0.8em;
+    .word1 {
+        font-family: 'OstrichSansRoundedMedium',Arial,sans-serif;
+        font-size: 1.7em;
+        color: #474747;
     }
-  big {
-    font-family: 'OstrichSansBlack',Arial,sans-serif;
-    font-size: 1.5em;
-    word-spacing: -0.1em;
-    color: @orange;
-    white-space: nowrap;
+    .word2 {
+      font-size: 1.4em;
+    }
+    
+    .word3 {
+      font-family: 'OstrichSansBlack',Arial,sans-serif;
+      font-size: 1.5em;
+      word-spacing: -0.1em;
+      color: @burnt-orange;
+      text-shadow: 2px 5px 5px rgba(248, 148, 6, 0.5);
+      white-space: nowrap;
+      -webkit-transition: all 0.2s linear;
+      display: inline-block;
+      &:hover {
+        -webkit-transform: scale(1.1);
+      }
+    }
   }
-  .tt-intro-large {
-    font-family: 'OstrichSansBold',Arial,sans-serif;
-    color: @blue-soft;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.7em;
-    white-space: nowrap;
-    word-spacing: -0.3em;
+  .line2{
+    display:block;
+    width:100%;
+    text-align:justify;
+    z-index: 100;
+    margin-bottom: inherit;
+    line-height: 0.9em;
+    .word1, .word2 {
+      font-family: 'OstrichSansMedium',Arial,sans-serif;
+      font-size: 0.8em;
+      white-space: nowrap;
+    }
+    
+    .word3, .word4 {
+      font-family: 'OstrichSansBold',Arial,sans-serif;
+      color: @blue-soft;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.7em;
+      white-space: nowrap;
+      word-spacing: -0.3em;
+      text-shadow: 2px 5px 5px rgba(20, 80, 200, 0.35);
+      display: inline-block;
+      &:hover {
+        -webkit-transform: scale(1.1);
+      }
+    }
   }
-  .tt-intro-medium {
+  .line3 {
     font-family: 'OstrichSansMedium',Arial,sans-serif;
-    font-size: 0.9em;
-    white-space: nowrap;
+    font-size: 1em;
+    color: #474747;
+    line-height: 0.4em;
+    word-spacing: 0.12em;
+  }
+  .line4 {
+    font-family: 'OstrichSansMedium',Arial,sans-serif;
+    word-spacing: 0.18em;
   }
 }
 /**
@@ -559,6 +591,14 @@ div.gr_grid_book_container:hover {
 .tt-sticker {
   margin: 0 10px;
   text-align: center;
+  cursor: pointer;
+  img {
+    .transition(all 1s ease-in-out);
+    
+  }
+}
+.spin {
+  .transform( rotate(720deg));
 }
 /**
  *   Mail me now Image
@@ -569,6 +609,12 @@ div.gr_grid_book_container:hover {
   overflow: hidden;
   margin: 0 0 10px 0;
   left: 0;
+  cursor: pointer;
+  display:block;
+  .transform( rotate(-4deg) );
+  &:hover {
+    .transform(scale(1.05) rotate(2deg));
+  }
 }
 /**
  *   Projects Footer

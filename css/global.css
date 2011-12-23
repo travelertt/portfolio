@@ -163,7 +163,7 @@ hgroup.site-name-slogan {
   background: -webkit-linear-gradient(bottom, #474747 0%, #333333 100%), url(../images/200-100-5-monochrome.png);
   background: -ms-linear-gradient(bottom, #474747 0%, #333333 100%), url(../images/200-100-5-monochrome.png);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #474747), color-stop(1, #333333)), url(../images/200-100-5-monochrome.png);
-  border-bottom: 3px solid #0069ff;
+  border-bottom: 3px solid #08b5fb;
   padding: 5px 0 0 0;
 }
 /**
@@ -222,7 +222,7 @@ ul.primary li a {
   -webkit-border-radius: 5px;
 }
 ul.primary li.active a {
-  background: #0069ff;
+  background: #08b5fb;
   color: #f0f8ff;
 }
 ul.primary li a:hover {
@@ -294,8 +294,8 @@ div.gr_grid_book_container:hover {
 #zone-branding {
   margin-bottom: 30px;
 }
-#block-search-form {
-  text-align: right;
+#block-search-form input {
+  color: #808080;
 }
 #zone-content-wrapper {
   padding: 20px 0 40px;
@@ -522,45 +522,63 @@ div.gr_grid_book_container:hover {
  * <span class="tt-intro-work">work &amp; look</span> 
  * great for mobile devices and desktop.</p>
  */
-#tt-welcome .pane-content {
+.tt-welcome {
+  text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.35), 1px 1px 1px #ffffff;
   font-family: 'OstrichSansMedium', Arial, sans-serif, Arial, sans-serif;
   margin-top: 0.1em;
   margin-right: auto;
   margin-left: auto;
-  font-size: 1.6em;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 0.725em;
   color: #999;
   text-align: left;
   width: 10.9em;
   max-width: 100%;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  -webkit-text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  -moz-text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
 }
-#tt-welcome .pane-content p {
+.tt-welcome .line1 {
+  display: block;
+  width: 100%;
+  text-align: justify;
   z-index: 100;
   margin-bottom: inherit;
   line-height: 1.2em;
 }
-#tt-welcome .pane-content strong {
+.tt-welcome .line1 .word1 {
   font-family: 'OstrichSansRoundedMedium', Arial, sans-serif;
   font-size: 1.7em;
   color: #474747;
 }
-#tt-welcome .pane-content .tt-intro-small {
-  font-family: 'OstrichSansMedium', Arial, sans-serif;
-  font-size: 1em;
-  color: #474747;
-  line-height: 0.8em;
+.tt-welcome .line1 .word2 {
+  font-size: 1.4em;
 }
-#tt-welcome .pane-content big {
+.tt-welcome .line1 .word3 {
   font-family: 'OstrichSansBlack', Arial, sans-serif;
   font-size: 1.5em;
   word-spacing: -0.1em;
   color: #cc9966;
+  text-shadow: 2px 5px 5px rgba(248, 148, 6, 0.5);
+  white-space: nowrap;
+  -webkit-transition: all 0.2s linear;
+  display: inline-block;
+}
+.tt-welcome .line1 .word3:hover {
+  -webkit-transform: scale(1.1);
+}
+.tt-welcome .line2 {
+  display: block;
+  width: 100%;
+  text-align: justify;
+  z-index: 100;
+  margin-bottom: inherit;
+  line-height: 0.9em;
+}
+.tt-welcome .line2 .word1, .tt-welcome .line2 .word2 {
+  font-family: 'OstrichSansMedium', Arial, sans-serif;
+  font-size: 0.8em;
   white-space: nowrap;
 }
-#tt-welcome .pane-content .tt-intro-large {
+.tt-welcome .line2 .word3, .tt-welcome .line2 .word4 {
   font-family: 'OstrichSansBold', Arial, sans-serif;
   color: #6699cc;
   font-style: normal;
@@ -568,11 +586,22 @@ div.gr_grid_book_container:hover {
   font-size: 1.7em;
   white-space: nowrap;
   word-spacing: -0.3em;
+  text-shadow: 2px 5px 5px rgba(20, 80, 200, 0.35);
+  display: inline-block;
 }
-#tt-welcome .pane-content .tt-intro-medium {
+.tt-welcome .line2 .word3:hover, .tt-welcome .line2 .word4:hover {
+  -webkit-transform: scale(1.1);
+}
+.tt-welcome .line3 {
   font-family: 'OstrichSansMedium', Arial, sans-serif;
-  font-size: 0.9em;
-  white-space: nowrap;
+  font-size: 1em;
+  color: #474747;
+  line-height: 0.4em;
+  word-spacing: 0.12em;
+}
+.tt-welcome .line4 {
+  font-family: 'OstrichSansMedium', Arial, sans-serif;
+  word-spacing: 0.18em;
 }
 /**
  *   Hire Me now Sticker
@@ -580,6 +609,20 @@ div.gr_grid_book_container:hover {
 .tt-sticker {
   margin: 0 10px;
   text-align: center;
+  cursor: pointer;
+}
+.tt-sticker img {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+.spin {
+  transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  -o-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
 }
 /**
  *   Mail me now Image
@@ -590,6 +633,20 @@ div.gr_grid_book_container:hover {
   overflow: hidden;
   margin: 0 0 10px 0;
   left: 0;
+  cursor: pointer;
+  display: block;
+  transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+}
+.tt-mail-me:hover {
+  transform: scale(1.05) rotate(2deg);
+  -moz-transform: scale(1.05) rotate(2deg);
+  -webkit-transform: scale(1.05) rotate(2deg);
+  -o-transform: scale(1.05) rotate(2deg);
+  -ms-transform: scale(1.05) rotate(2deg);
 }
 /**
  *   Projects Footer
@@ -756,7 +813,7 @@ div.gr_grid_book_container:hover {
   background: rgba(27, 37, 64, 0.9);
   background: url(../images/denim.png) repeat;
   padding: 1.8em 0 1.5em;
-  border-top: 3px solid #0069ff;
+  border-top: 3px solid #08b5fb;
 }
 /**
  *   Lower Footer Menu Block
