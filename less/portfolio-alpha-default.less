@@ -51,8 +51,10 @@ nav.navigation {
   vertical-align: middle;
 }
 #zone-menu-wrapper {
-  border-bottom: 3px solid #0069ff;
   padding: 5px 0 25px 0;
+}
+#block-delta-blocks-logo {
+  position: static;
 }
 #zone-content-wrapper {
   padding: 20px 0 40px;
@@ -92,23 +94,23 @@ nav.navigation {
 /**
  *   Front Page Intro
  */
-#tt-welcome .pane-content{
-  text-align: justify ;
+.tt-welcome {
+  font-size: 1em;
 }
-#tt-welcome  big {
-  white-space: nowrap;
-}
-#tt-welcome p strong {
-
-}
-#tt-welcome em {
-
-}
-#tt-welcome .tt-intro-large {
-
-}
-#tt-welcome p.tt-intro-small {
- margin-top: -7px;
+/**
+ *   Hire Me now Sticker
+ */
+.tt-sticker {
+  position: static;
+  top: 0;
+  right: 0;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  img {
+    z-index:-100;
+    width: 100%;
+  }
 }
 .tt-mail-me {
   left: 6px;
@@ -151,8 +153,9 @@ nav.navigation {
   width: inherit;
   height: inherit;
 }
-#region-lower-second .content p {
+#region-lower-second .content {
   text-align: right;
+  margin: 5px;
 }
 .view-mode-large_teaser  {
   font-size: 2em;

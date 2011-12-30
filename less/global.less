@@ -163,8 +163,9 @@ hgroup.site-name-slogan {
   background:  url(@image), -moz-linear-gradient(bottom, @color1 0%, @color2 100%);
   background: url(@image), -webkit-linear-gradient(bottom, @color1 0%, @color2 100%);
   background: url(@image), -ms-linear-gradient(bottom, @color1 0%, @color2 100%);
-  border-bottom: 3px solid @blue;
-  padding: 5px 0 0 0;
+  border-bottom: 0.15em solid @blue-soft;
+  padding: 0;
+  box-shadow: 0 0 10px @blue-soft;
 
   .layer-1::before {
     content:'';
@@ -173,16 +174,18 @@ hgroup.site-name-slogan {
     left: 0;
     width:150px;
     height:150px;
-    background: url('../images/paisley-highlights-sprites.png') no-repeat 0px -750px;
+    background: url('../images/paisley-highlights-sprites.png') no-repeat;
+    background-position: 0px -750px;
   }
   .layer-2::before {
     content:'';
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 14.5%;
     width:150px;
     height:150px;
-    background: url('../images/paisley-highlights-sprites.png') no-repeat 0px -280px;
+    //background: url('../images/paisley-highlights-sprites.png') no-repeat;
+    background-position: 0px -300px;
   }
   .layer-3::before {
     content:'';
@@ -191,7 +194,8 @@ hgroup.site-name-slogan {
     right: 0;
     width:150px;
     height:150px;
-    background: url('../images/paisley-highlights-sprites.png') no-repeat 0px -600px;
+    background: url('../images/paisley-highlights-sprites.png') no-repeat;
+    background-position: 0px -600px;
   }
 }
 /**
@@ -341,8 +345,9 @@ div.gr_grid_book_container:hover {
   margin-bottom: 30px;
   width: 940px;
 }
-#region-branding{
-  margin-top: 10px;
+#block-delta-blocks-logo {
+  position: relative;
+  top: 0.5em;
 }
 #zone-branding {
   margin-bottom: 30px;
@@ -351,7 +356,10 @@ div.gr_grid_book_container:hover {
   color: @gray;
 }
 #zone-content-wrapper {
-  padding: 20px 0 40px;
+  padding: 20px 0 0;
+}
+#zone-content {
+  position: relative;
 }
 #zone-content .content article:first-of-type {
   margin-bottom: 0;
@@ -524,21 +532,20 @@ div.gr_grid_book_container:hover {
  * great for mobile devices and desktop.</p>
  */
 .tt-welcome {
-  text-shadow: 3px 5px 4px rgba(0,0,0,0.35), 1px 1px 1px #FFF;
-  
-  font-family: 'OstrichSansMedium',Arial,sans-serif,Arial,sans-serif;
   margin-top: 0.1em;
   margin-right:auto;
   margin-left:auto;
-  font-size: 1em;
+  font-family: 'OstrichSansMedium',Arial,sans-serif,Arial,sans-serif;
+  text-shadow: 3px 5px 4px rgba(0,0,0,0.35), 1px 1px 1px #FFF;  
+  font-size: 1.9em;
   line-height: 0.725em;
   color: #999;
   text-align: left;
-  width: 10.9em;
   max-width: 100%;
   transition:  all 0.3s linear;
-
-  
+  // Position relative is so the z-index is in scope with the sticker z-index
+  position:relative;
+  z-index: 100;
   .line1 {
     display:block;
     width:100%;
@@ -576,7 +583,7 @@ div.gr_grid_book_container:hover {
     text-align:justify;
     z-index: 100;
     margin-bottom: inherit;
-    line-height: 0.9em;
+    line-height: 1em;
     .word1, .word2 {
       font-family: 'OstrichSansMedium',Arial,sans-serif;
       font-size: 0.8em;
@@ -602,24 +609,32 @@ div.gr_grid_book_container:hover {
     font-family: 'OstrichSansMedium',Arial,sans-serif;
     font-size: 1em;
     color: #474747;
-    line-height: 0.4em;
+    line-height: 0.6em;
     word-spacing: 0.12em;
+    display: block;
   }
   .line4 {
     font-family: 'OstrichSansMedium',Arial,sans-serif;
     word-spacing: 0.18em;
+    line-height: 0.9em;
+    display: block;
   }
 }
 /**
  *   Hire Me now Sticker
  */
 .tt-sticker {
-  margin: 0 10px;
+  position: absolute;
+  top: -90px;
+  right: 0;
+  margin: 0 0px;
   text-align: center;
   cursor: pointer;
+  z-index: 10;
   img {
     .transition(all 1s ease-in-out);
-    
+    z-index:-100;
+    width: 100px;
   }
 }
 .spin {
@@ -632,7 +647,7 @@ div.gr_grid_book_container:hover {
   position: relative;
   text-align: center;
   overflow: hidden;
-  margin: 0 0 10px 0;
+  margin: 14px 0 0;
   left: 0;
   cursor: pointer;
   display:block;
@@ -670,11 +685,12 @@ div.gr_grid_book_container:hover {
   }
   .field-name-field-image {
     .border-radius;
+    margin-bottom: 1em;
     margin-left: 1em;
     img {
-      border: 3px solid #FCFCFC;
+      border: 0.6em solid #FCFCFC;
       .border-radius;
-      width: inherit;
+      width: 90%;
     }
   }
   .tt-screenshot {
@@ -693,7 +709,7 @@ div.gr_grid_book_container:hover {
   .field-name-title {
     font-size: 2em;
     margin:0 0.5em 10px;
-    line-hieght: 1em;
+    line-height: 0.95em;
     a {
       color:#DDDDDD;
       text-decoration:none;
@@ -769,6 +785,8 @@ div.gr_grid_book_container:hover {
   line-height: 1.8em;
   color: @white-blueish;
   text-shadow: 0 0 2em @white-blueish;
+  -moz-text-shadow: 0 0 2em @white-blueish;
+  -webkit-text-shadow: 0 0 2em @white-blueish;
 }
 /**
  *   Lower Footer
@@ -796,6 +814,7 @@ div.gr_grid_book_container:hover {
 
 .region-lower-second .content {
   text-align: left;
+  margin: 5px;
 }
 /**
  *   disqus_thread
