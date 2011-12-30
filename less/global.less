@@ -9,7 +9,7 @@ a:not(.contextual-links-trigger) , button, div {
   .transition;
 }
 body {
-  font-size: 16px;
+  font-size: 100%;
   font-family: "Maven Pro", Arial, "MS Trebuchet", sans-serif;
   line-height: 1.5em;
   background: url(../images/handmadepaper.png) scroll repeat;
@@ -546,6 +546,8 @@ div.gr_grid_book_container:hover {
   // Position relative is so the z-index is in scope with the sticker z-index
   position:relative;
   z-index: 100;
+  white-space:nowrap;
+  
   .line1 {
     display:block;
     width:100%;

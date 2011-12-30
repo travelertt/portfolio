@@ -8,7 +8,7 @@ a:not(.contextual-links-trigger), button, div {
   -webkit-transition: all 0.1s ease-in;
 }
 body {
-  font-size: 16px;
+  font-size: 100%;
   font-family: "Maven Pro", Arial, "MS Trebuchet", sans-serif;
   line-height: 1.5em;
   background: url(../images/handmadepaper.png) scroll repeat;
@@ -569,6 +569,7 @@ div.gr_grid_book_container:hover {
   transition: all 0.3s linear;
   position: relative;
   z-index: 100;
+  white-space: nowrap;
 }
 .tt-welcome .line1 {
   display: block;
